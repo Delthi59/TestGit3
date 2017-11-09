@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        label {white-space: pre}
+        label.Hid {visibility:hidden}
+        textarea { vertical-align:top; width: 50%; height: 20%; padding: 20px; }
+        fieldset.rdio { background-color: transparent; width:10%; }
+        fieldset.main { width:"80%"; background-color: #F5F9A0; border:4px solid }
+        input, textarea { background-color: #ddddff; }
+        input:hover, textarea:hover { background-color: #dd22ff; }
+    </style>
+</head>
+<body>
+<fieldset class="main">
+    <legend>Inscription au Site</legend>
+    <form  action="get">
+        <ul>
+            <li><p><label>Nom:                                   </label>
+                <input type="text" align="left" autofocus="" maxlength="30" required/>
+                </p></li>
+            <li><p><label>Prénom:                               </label>
+                <input type="text" align="left" maxlength="30" required/>
+                </p></li>
+            <li><p><label>Téléphone:                          </label>
+                <input type="tel" align="left" placeholder="00.00.00.00.00" maxlength="14"/>
+                </p></li>
+            <li><p><label>Date de naissance:              </label>
+                <input type="date" align="left">
+                </p></li>
+            <li><p><label>Votre couleur préférée (1): </label>
+                <input type="color"/>
+                </p></li>
+            <li><p><label>Newsletter:</label>
+                <fieldset class="rdio">
+                    <label>Oui</label><input type="radio" checked="checked" align="right" name="OkNws"/>
+                    <label>Non</label><input type="radio" align="right" name="OkNws"/>
+                </fieldset>
+                </p></li>
+            <li><p><label>Photo profil:                     </label>
+                <input type="file">
+                </p></li>
+            <li><p><label>Commentaires :                </label>
+                <textarea name="textarea" rows="10" cols="50"></textarea></p>
+            </li>
+        </ul>
+
+</fieldset>
+</form>
+</body>
+</html>
